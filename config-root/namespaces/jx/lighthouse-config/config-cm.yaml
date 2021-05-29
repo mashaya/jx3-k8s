@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         mashaya/jx3-k8s: true
+        mashaya/sbhg: true
         mashaya/testproject: true
         mashaya/testqwer: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         mashaya/jx3-k8s: merge
+        mashaya/sbhg: merge
         mashaya/testproject: merge
         mashaya/testqwer: merge
       queries:
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - mashaya/jx3-k8s
+        - mashaya/sbhg
         - mashaya/testproject
         - mashaya/testqwer
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - mashaya/jx3-k8s
+        - mashaya/sbhg
         - mashaya/testproject
         - mashaya/testqwer
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
