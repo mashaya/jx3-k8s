@@ -11,7 +11,13 @@ spec:
     - name: testproject
     scheduler: in-repo
   jenkinsServers:
-  - server: myjenkins
+  - groups:
+    - owner: mashaya
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: spjf
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
