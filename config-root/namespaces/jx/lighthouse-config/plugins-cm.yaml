@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - mashaya/sbhg
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - mashaya/testproject
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -27,6 +31,9 @@ data:
       mashaya/jx3-k8s:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
+      mashaya/sbhg:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       mashaya/testproject:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -40,6 +47,22 @@ data:
     plugins:
       mashaya/jx3-k8s:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      mashaya/sbhg:
       - approve
       - assign
       - blunderbuss
@@ -98,6 +121,9 @@ data:
     triggers:
     - repos:
       - mashaya/jx3-k8s
+      trusted_org: todo
+    - repos:
+      - mashaya/sbhg
       trusted_org: todo
     - repos:
       - mashaya/testproject
