@@ -1,0 +1,16 @@
+filepath: ""
+namespace: myjenkins
+repositories:
+- name: jenkinsci
+  url: https://charts.jenkins.io
+- name: jx3
+  url: https://storage.googleapis.com/jenkinsxio/charts
+releases:
+- chart: jenkinsci/jenkins
+  name: jenkins
+  values:
+  - values.yaml
+- chart: jx3/jenkins-resources
+  name: jenkins-resources
+templates: {}
+renderedvalues: {}
