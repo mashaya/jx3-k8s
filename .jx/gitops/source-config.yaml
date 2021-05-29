@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: testproject
+    - name: testqwer
     scheduler: in-repo
   jenkinsServers:
   - groups:
