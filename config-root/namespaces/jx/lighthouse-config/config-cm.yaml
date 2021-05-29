@@ -9,6 +9,7 @@ data:
       enabled:
         mashaya/jx3-k8s: true
         mashaya/testproject: true
+        mashaya/testqwer: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         mashaya/jx3-k8s: merge
         mashaya/testproject: merge
+        mashaya/testqwer: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/testproject
+        - mashaya/testqwer
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/testproject
+        - mashaya/testqwer
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
 kind: ConfigMap
 metadata:
