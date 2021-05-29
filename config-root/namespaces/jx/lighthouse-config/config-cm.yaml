@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         mashaya/jx3-k8s: true
+        mashaya/rty: true
         mashaya/testproject: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         mashaya/jx3-k8s: merge
+        mashaya/rty: merge
         mashaya/testproject: merge
       queries:
       - labels:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - mashaya/jx3-k8s
+        - mashaya/rty
         - mashaya/testproject
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - mashaya/jx3-k8s
+        - mashaya/rty
         - mashaya/testproject
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
 kind: ConfigMap
