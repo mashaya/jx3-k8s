@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         mashaya/go-lang-test: true
+        mashaya/go-lang-test1: true
         mashaya/jx3-k8s: true
         mashaya/sbhg: true
         mashaya/testproject: true
@@ -26,6 +27,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         mashaya/go-lang-test: merge
+        mashaya/go-lang-test1: merge
         mashaya/jx3-k8s: merge
         mashaya/sbhg: merge
         mashaya/testproject: merge
@@ -44,6 +46,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/go-lang-test
+        - mashaya/go-lang-test1
         - mashaya/sbhg
         - mashaya/testproject
         - mashaya/testqwer
@@ -60,6 +63,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/go-lang-test
+        - mashaya/go-lang-test1
         - mashaya/sbhg
         - mashaya/testproject
         - mashaya/testqwer
