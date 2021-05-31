@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - mashaya/go-lang-test
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - mashaya/sbhg
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -36,6 +40,9 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      mashaya/go-lang-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       mashaya/jx3-k8s:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -59,6 +66,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      mashaya/go-lang-test:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       mashaya/jx3-k8s:
       - config-updater
       - approve
@@ -167,6 +190,9 @@ data:
     triggers:
     - repos:
       - mashaya/jx3-k8s
+      trusted_org: todo
+    - repos:
+      - mashaya/go-lang-test
       trusted_org: todo
     - repos:
       - mashaya/sbhg
