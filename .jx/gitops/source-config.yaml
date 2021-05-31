@@ -12,6 +12,7 @@ spec:
     - name: testproject
     - name: testqwer
     - name: ttestt
+    - name: ttteesst
     scheduler: in-repo
   jenkinsServers:
   - groups:

@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mashaya
+    provider: github
+    repository: ttteesst
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mashaya-ttteesst
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mashaya/ttteesst.git
+  org: mashaya
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: ttteesst
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mashaya/ttteesst

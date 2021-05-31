@@ -12,6 +12,7 @@ data:
         mashaya/testproject: true
         mashaya/testqwer: true
         mashaya/ttestt: true
+        mashaya/ttteesst: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -28,6 +29,7 @@ data:
         mashaya/testproject: merge
         mashaya/testqwer: merge
         mashaya/ttestt: merge
+        mashaya/ttteesst: merge
       queries:
       - labels:
         - approved
@@ -43,6 +45,7 @@ data:
         - mashaya/testproject
         - mashaya/testqwer
         - mashaya/ttestt
+        - mashaya/ttteesst
       - labels:
         - updatebot
         missingLabels:
@@ -57,6 +60,7 @@ data:
         - mashaya/testproject
         - mashaya/testqwer
         - mashaya/ttestt
+        - mashaya/ttteesst
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
 kind: ConfigMap
 metadata:
