@@ -23,6 +23,7 @@ spec:
       providerKind: github
       repositories:
       - name: spjf
+      - name: test1234
     server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
