@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-staging
 repositories:
 - name: dev
@@ -7,5 +11,7 @@ releases:
 - chart: dev/go-lang-test1
   version: 0.0.3
   name: go-lang-test1
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
