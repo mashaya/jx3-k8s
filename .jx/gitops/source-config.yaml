@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: go-lang-test
+    - name: go-lang-test1
     - name: sbhg
     - name: testproject
     - name: testqwer
