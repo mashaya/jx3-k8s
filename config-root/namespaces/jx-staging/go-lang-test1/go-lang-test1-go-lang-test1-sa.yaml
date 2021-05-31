@@ -1,0 +1,10 @@
+# Source: go-lang-test1/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: go-lang-test1-go-lang-test1
+  annotations:
+    meta.helm.sh/release-name: 'go-lang-test1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
