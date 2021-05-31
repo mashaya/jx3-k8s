@@ -37,6 +37,9 @@ jxRequirements:
     repository: jx3-k8s
   - key: staging
   - key: production
+  - key: dev1
+    owner: mashaya
+    repository: jx3-k22s
   ingress:
     domain: prod.jx.nile-global.cloud
     externalDNS: false
