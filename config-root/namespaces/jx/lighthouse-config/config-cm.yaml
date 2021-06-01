@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        mashaya/enkgolang: true
         mashaya/go-lang-test: true
         mashaya/go-lang-test1: true
         mashaya/jx3-k8s: true
@@ -27,6 +28,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        mashaya/enkgolang: merge
         mashaya/go-lang-test: merge
         mashaya/go-lang-test1: merge
         mashaya/jx3-k8s: merge
@@ -48,6 +50,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/jx3-k22s
+        - mashaya/enkgolang
         - mashaya/go-lang-test
         - mashaya/go-lang-test1
         - mashaya/sbhg
@@ -66,6 +69,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/jx3-k22s
+        - mashaya/enkgolang
         - mashaya/go-lang-test
         - mashaya/go-lang-test1
         - mashaya/sbhg
