@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - mashaya/spjgh
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - mashaya/test-ms
       require_self_approval: true
     cat: {}
@@ -28,6 +32,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       mashaya/jx3-k8s:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      mashaya/spjgh:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       mashaya/test-ms:
@@ -56,6 +63,22 @@ data:
       - pony
       mashaya/jx3-k8s:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      mashaya/spjgh:
       - approve
       - assign
       - blunderbuss
@@ -101,6 +124,9 @@ data:
       trusted_org: todo
     - repos:
       - mashaya/go-lang-test
+      trusted_org: todo
+    - repos:
+      - mashaya/spjgh
       trusted_org: todo
     - repos:
       - mashaya/test-ms
