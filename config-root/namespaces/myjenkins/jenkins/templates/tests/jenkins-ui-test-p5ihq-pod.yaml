@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-rwhul"
+  name: "jenkins-ui-test-p5ihq"
   namespace: myjenkins
   annotations:
     "helm.sh/hook": test-success
