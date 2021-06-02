@@ -9,6 +9,7 @@ data:
       enabled:
         mashaya/go-lang-test: true
         mashaya/jx3-k8s: true
+        mashaya/spjgh: true
         mashaya/test-ms: true
     plank: {}
     pod_namespace: jx
@@ -23,6 +24,7 @@ data:
       merge_method:
         mashaya/go-lang-test: merge
         mashaya/jx3-k8s: merge
+        mashaya/spjgh: merge
         mashaya/test-ms: merge
       queries:
       - labels:
@@ -36,6 +38,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/go-lang-test
+        - mashaya/spjgh
         - mashaya/test-ms
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/go-lang-test
+        - mashaya/spjgh
         - mashaya/test-ms
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
 kind: ConfigMap
