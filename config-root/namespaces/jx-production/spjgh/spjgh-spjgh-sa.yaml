@@ -1,0 +1,10 @@
+# Source: spjgh/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: spjgh-spjgh
+  annotations:
+    meta.helm.sh/release-name: 'spjgh'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
