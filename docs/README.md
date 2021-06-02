@@ -115,7 +115,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> go-lang-test </a></td>
-	      <td>0.0.3</td>
+	      <td>0.0.4</td>
 	      <td><a href='http://go-lang-test-jx-staging.prod.jx.nile-global.cloud'>view</a></td>
 	      <td></td>
 	    </tr>
