@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        mashaya/go-lang-test: true
         mashaya/jx3-k8s: true
         mashaya/jx3-k22s: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        mashaya/go-lang-test: merge
         mashaya/jx3-k8s: merge
         mashaya/jx3-k22s: merge
       queries:
@@ -34,6 +36,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/jx3-k22s
+        - mashaya/go-lang-test
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/jx3-k22s
+        - mashaya/go-lang-test
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
 kind: ConfigMap
 metadata:
