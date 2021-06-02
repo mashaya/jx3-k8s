@@ -5,7 +5,7 @@ metadata:
   name: go-lang-test-go-lang-test
   labels:
     draft: draft-app
-    chart: "go-lang-test-0.0.3"
+    chart: "go-lang-test-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'go-lang-test'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: go-lang-test-go-lang-test
       containers:
         - name: go-lang-test
-          image: "ghcr.io/mashaya/go-lang-test:0.0.3"
+          image: "ghcr.io/mashaya/go-lang-test:0.0.4"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.3
+              value: 0.0.4
           envFrom: null
           ports:
             - name: http
