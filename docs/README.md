@@ -119,6 +119,12 @@
 	      <td><a href='http://go-lang-test-jx-staging.prod.jx.nile-global.cloud'>view</a></td>
 	      <td></td>
 	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> spjgh </a></td>
+	      <td>0.0.1</td>
+	      <td><a href='http://spjgh-jx-staging.prod.jx.nile-global.cloud'>view</a></td>
+	      <td></td>
+	    </tr>
 
   </tbody>
 </table>

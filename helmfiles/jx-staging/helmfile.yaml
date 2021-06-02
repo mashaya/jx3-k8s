@@ -13,5 +13,10 @@ releases:
   name: go-lang-test
   values:
   - jx-values.yaml
+- chart: dev/spjgh
+  version: 0.0.1
+  name: spjgh
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

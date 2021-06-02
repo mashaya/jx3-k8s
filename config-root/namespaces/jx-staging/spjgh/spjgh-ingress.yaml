@@ -1,0 +1,19 @@
+# Source: spjgh/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'spjgh'
+  name: spjgh
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: spjgh
+              servicePort: 80
+      host: spjgh-jx-staging.prod.jx.nile-global.cloud
