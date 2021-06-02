@@ -11,6 +11,7 @@ spec:
     - name: enkgolang
     - name: go-lang-test
     - name: go-lang-test1
+    - name: golang-http-test1
     - name: sbhg
     - name: testproject
     - name: testqwer
