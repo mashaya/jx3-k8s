@@ -12,42 +12,13 @@ controller:
               folder('mashaya')
                             
               // from template: versionStream/jenkins/templates/job.gotmpl
-              multibranchPipelineJob('mashaya/spjf') {
+              multibranchPipelineJob('mashaya/spmjf') {
                   branchSources {
                       github {
-                          id('mashaya-spjf')
+                          id('mashaya-spmjf')
                           scanCredentialsId('tekton-git')
                           repoOwner('mashaya')
-                          repository('spjf')
-                      }
-                  }
-                  configure { node ->
-                    def traits = node / 'sources' / 'data' / 'jenkins.branch.BranchSource' / 'source' / 'traits'
-                    traits << 'org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait' {
-                      strategyId(1)
-                    }
-                    traits << 'org.jenkinsci.plugins.github__branch__source.OriginPullRequestDiscoveryTrait' {
-                      strategyId(1)
-                    }
-                    traits << 'org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait' {
-                      strategyId(1)
-                      trust(class: 'org.jenkinsci.plugins.github_branch_source.ForkPullRequestDiscoveryTrait$TrustPermission')
-                    }
-                    traits << 'jenkins.scm.impl.trait.WildcardSCMHeadFilterTrait' {
-                      includes('main master PR-*')
-                      excludes()
-                    }
-                  }
-              }
-                            
-              // from template: versionStream/jenkins/templates/job.gotmpl
-              multibranchPipelineJob('mashaya/test1234') {
-                  branchSources {
-                      github {
-                          id('mashaya-test1234')
-                          scanCredentialsId('tekton-git')
-                          repoOwner('mashaya')
-                          repository('test1234')
+                          repository('spmjf')
                       }
                   }
                   configure { node ->
