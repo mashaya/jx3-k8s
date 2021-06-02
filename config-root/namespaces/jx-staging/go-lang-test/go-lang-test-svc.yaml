@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: go-lang-test
   labels:
-    chart: "go-lang-test-0.0.3"
+    chart: "go-lang-test-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'go-lang-test'
