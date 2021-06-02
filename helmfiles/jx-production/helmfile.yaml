@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
+releases:
+- chart: dev/go-lang-test
+  version: 0.0.3
+  name: go-lang-test
+templates: {}
+renderedvalues: {}
