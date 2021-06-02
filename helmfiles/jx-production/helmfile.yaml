@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
+releases:
+- chart: dev/go-lang-test1
+  version: 0.0.3
+  name: go-lang-test1
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}
