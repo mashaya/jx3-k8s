@@ -3,30 +3,5 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
-  groups:
-  - owner: mashaya
-    provider: https://github.com
-    providerKind: github
-    repositories:
-    - name: enkgolang
-    - name: go-lang-test
-    - name: go-lang-test1
-    - name: sbhg
-    - name: testproject
-    - name: testqwer
-    - name: ttestt
-    - name: ttteesst
-    scheduler: in-repo
   jenkinsServers:
-  - groups:
-    - owner: mashaya
-      provider: https://github.com
-      providerKind: github
-      repositories:
-      - name: spjf
-      - name: test1234
-    server: myjenkins
-  slack:
-    channel: '#jenkins-x-pipelines'
-    kind: failureOrNextSuccess
-    pipeline: release
+  - server: myjenkins
