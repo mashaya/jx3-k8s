@@ -3,5 +3,16 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
+  groups:
+  - owner: mashaya
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: go-lang-test
+    scheduler: in-repo
   jenkinsServers:
   - server: myjenkins
+  slack:
+    channel: '#jenkins-x-pipelines'
+    kind: failureOrNextSuccess
+    pipeline: release
