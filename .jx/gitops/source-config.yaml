@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: go-lang-test
+    - name: test-ms
     scheduler: in-repo
   jenkinsServers:
   - server: myjenkins
