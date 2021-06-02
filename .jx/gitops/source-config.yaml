@@ -12,7 +12,13 @@ spec:
     - name: test-ms
     scheduler: in-repo
   jenkinsServers:
-  - server: myjenkins
+  - groups:
+    - owner: mashaya
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: spmjf
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
