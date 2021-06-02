@@ -16,5 +16,7 @@ releases:
 - chart: dev/spjgh
   version: 0.0.1
   name: spjgh
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
