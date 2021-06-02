@@ -7,16 +7,8 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
-        mashaya/enkgolang: true
-        mashaya/go-lang-test: true
-        mashaya/go-lang-test1: true
         mashaya/jx3-k8s: true
         mashaya/jx3-k22s: true
-        mashaya/sbhg: true
-        mashaya/testproject: true
-        mashaya/testqwer: true
-        mashaya/ttestt: true
-        mashaya/ttteesst: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -28,16 +20,8 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
-        mashaya/enkgolang: merge
-        mashaya/go-lang-test: merge
-        mashaya/go-lang-test1: merge
         mashaya/jx3-k8s: merge
         mashaya/jx3-k22s: merge
-        mashaya/sbhg: merge
-        mashaya/testproject: merge
-        mashaya/testqwer: merge
-        mashaya/ttestt: merge
-        mashaya/ttteesst: merge
       queries:
       - labels:
         - approved
@@ -50,14 +34,6 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/jx3-k22s
-        - mashaya/enkgolang
-        - mashaya/go-lang-test
-        - mashaya/go-lang-test1
-        - mashaya/sbhg
-        - mashaya/testproject
-        - mashaya/testqwer
-        - mashaya/ttestt
-        - mashaya/ttteesst
       - labels:
         - updatebot
         missingLabels:
@@ -69,14 +45,6 @@ data:
         repos:
         - mashaya/jx3-k8s
         - mashaya/jx3-k22s
-        - mashaya/enkgolang
-        - mashaya/go-lang-test
-        - mashaya/go-lang-test1
-        - mashaya/sbhg
-        - mashaya/testproject
-        - mashaya/testqwer
-        - mashaya/ttestt
-        - mashaya/ttteesst
       target_url: http://dashboard-jx.prod.jx.nile-global.cloud
 kind: ConfigMap
 metadata:

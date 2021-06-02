@@ -10,38 +10,6 @@ data:
       repos:
       - mashaya/jx3-k22s
       require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/enkgolang
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/go-lang-test
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/go-lang-test1
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/sbhg
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/testproject
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/testqwer
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/ttestt
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mashaya/ttteesst
-      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -52,34 +20,10 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
-      mashaya/enkgolang:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/go-lang-test:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/go-lang-test1:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
       mashaya/jx3-k8s:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       mashaya/jx3-k22s:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/sbhg:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/testproject:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/testqwer:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/ttestt:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      mashaya/ttteesst:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
     heart: {}
@@ -87,54 +31,6 @@ data:
       additional_labels: null
     owners: {}
     plugins:
-      mashaya/enkgolang:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      mashaya/go-lang-test:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      mashaya/go-lang-test1:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       mashaya/jx3-k8s:
       - config-updater
       - approve
@@ -168,86 +64,6 @@ data:
       - cat
       - dog
       - pony
-      mashaya/sbhg:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      mashaya/testproject:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      mashaya/testqwer:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      mashaya/ttestt:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      mashaya/ttteesst:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -262,30 +78,6 @@ data:
       trusted_org: todo
     - repos:
       - mashaya/jx3-k22s
-      trusted_org: todo
-    - repos:
-      - mashaya/enkgolang
-      trusted_org: todo
-    - repos:
-      - mashaya/go-lang-test
-      trusted_org: todo
-    - repos:
-      - mashaya/go-lang-test1
-      trusted_org: todo
-    - repos:
-      - mashaya/sbhg
-      trusted_org: todo
-    - repos:
-      - mashaya/testproject
-      trusted_org: todo
-    - repos:
-      - mashaya/testqwer
-      trusted_org: todo
-    - repos:
-      - mashaya/ttestt
-      trusted_org: todo
-    - repos:
-      - mashaya/ttteesst
       trusted_org: todo
     welcome:
     - message_template: Welcome
